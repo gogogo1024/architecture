@@ -10,8 +10,11 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
+import java.net.URI;
 import java.net.URL;
 import java.net.URLClassLoader;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 @SpringBootTest
 public class SingletonTests {
@@ -58,13 +61,18 @@ public class SingletonTests {
         System.out.println(instance1 == instance2);
     }
 
+
     @Test
     void classLoadTest() throws MalformedURLException, ClassNotFoundException, NoSuchMethodException, InvocationTargetException, IllegalAccessException, InstantiationException {
         // 自定义加载类
+        // TODO 文件路径优化
+        Path path = Paths.get("src/main/java/");
+        String absPath = path.toUri().toString();
+
         URLClassLoader cl1 = new URLClassLoader(new URL[]{
-                new URL("file:///Users/huangcheng/Documents/github/rencently/demo/src/main/java/")}, null);
+                new URL(absPath)}, null);
         URLClassLoader cl2 = new URLClassLoader(new URL[]{
-                new URL("file:///Users/huangcheng/Documents/github/rencently/demo/src/main/java/")}, null);
+                new URL(absPath)}, null);
         Class singletonClass1 = cl1.loadClass("com.example.demo.HelloWorld");
         Class singletonClass2 = cl2.loadClass("com.example.demo.HelloWorld");
 
