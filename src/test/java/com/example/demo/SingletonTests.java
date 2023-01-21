@@ -88,7 +88,7 @@ public class SingletonTests {
         method1.invoke(instance1);
         method2.invoke(instance2);
 
-        System.out.println("instance1 == instance2");
+        System.out.println("instance1 != instance2");
         System.out.println(instance1 == instance2);
     }
 }
