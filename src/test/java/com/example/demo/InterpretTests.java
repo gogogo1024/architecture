@@ -1,8 +1,8 @@
 package com.example.demo;
 
-import com.example.demo.pattern.Interpreter.Expression;
-import com.example.demo.pattern.Interpreter.ExpressionUtils;
-import com.example.demo.pattern.Interpreter.Numbers;
+import com.example.demo.pattern.interpreter.Expression;
+import com.example.demo.pattern.interpreter.ExpressionUtils;
+import com.example.demo.pattern.interpreter.Numbers;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 

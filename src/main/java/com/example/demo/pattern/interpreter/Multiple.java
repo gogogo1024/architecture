@@ -1,4 +1,4 @@
-package com.example.demo.pattern.Interpreter;
+package com.example.demo.pattern.interpreter;
 
 public class Multiple implements Expression {
     private final Expression leftExpression;

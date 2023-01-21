@@ -12,5 +12,8 @@
     - mediator 适配器模式
     - observer 观察者模式
     - proxy 代理模式
-    - signleton 单例模式
+    - singleton 单例模式
+    - interpreter 解释器模式
+    - state 状态模式
+    - decorator 装饰器模式
 2. src/test 测试文件

@@ -1,4 +1,4 @@
-package com.example.demo.pattern.Interpreter;
+package com.example.demo.pattern.interpreter;
 
 public class ExpressionUtils {
     public static boolean isOperator(String s) {

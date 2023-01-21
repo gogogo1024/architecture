@@ -1,4 +1,4 @@
-package com.example.demo.pattern.Interpreter;
+package com.example.demo.pattern.interpreter;
 
 /**
  * postfix 后缀表达式
