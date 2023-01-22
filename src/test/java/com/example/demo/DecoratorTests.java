@@ -13,5 +13,6 @@ public class DecoratorTests {
         Human human = new OrdinaryHuman();
         human = new European(human);
         System.out.println("Desc: " + human.getDesc());
+        System.out.println("Height: " + human.getHeight());
     }
 }

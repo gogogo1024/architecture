@@ -7,6 +7,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 public class StateTests {
     @Test
     void contextLoads() {
-        
+
     }
 }

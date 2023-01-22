@@ -1,6 +1,6 @@
 package com.example.demo.pattern.mediator;
 
-public class CottonMediator implements MachineMediator{
+public class CottonMediator implements MachineMediator {
     private final Machine machine;
     private final Heater heater;
     private final Motor motor;
@@ -10,12 +10,13 @@ public class CottonMediator implements MachineMediator{
 
     /**
      * 棉花适配机
-     * @param machine 机器
+     *
+     * @param machine     机器
      * @param heater
-     * @param motor 马达
-     * @param sensor 传感器
+     * @param motor       马达
+     * @param sensor      传感器
      * @param soilRemoval 除灰
-     * @param valve 阀门
+     * @param valve       阀门
      */
     public CottonMediator(Machine machine, Heater heater, Motor motor, Sensor sensor, SoilRemoval soilRemoval, Valve valve) {
         this.machine = machine;
@@ -61,8 +62,7 @@ public class CottonMediator implements MachineMediator{
     @Override
     public void closed() {
         valve.closed();
-     }
-
+    }
 
 
     /**
@@ -83,6 +83,7 @@ public class CottonMediator implements MachineMediator{
 
     /**
      * 检查温度
+     *
      * @param temp 温度
      * @return 温度是否达标
      */

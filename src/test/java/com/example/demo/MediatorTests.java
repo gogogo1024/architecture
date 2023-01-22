@@ -20,7 +20,7 @@ public class MediatorTests {
         Valve valve = new Valve();
 
 
-        mediator = new CottonMediator(machine, heater, motor, sensor, soilRemoval,valve);
+        mediator = new CottonMediator(machine, heater, motor, sensor, soilRemoval, valve);
 
         button.setMediator(mediator);
         machine.setMediator(mediator);

@@ -1,9 +1,11 @@
 package com.example.demo.pattern.mediator;
 
-public class Machine implements Colleague{
-    private  MachineMediator mediator;
+public class Machine implements Colleague {
+    private MachineMediator mediator;
+
     /**
      * 设置适配器
+     *
      * @param mediator
      */
     @Override
@@ -14,14 +16,14 @@ public class Machine implements Colleague{
     /**
      * 启动
      */
-    public void start(){
+    public void start() {
         mediator.open();
     }
 
     /**
      * 清洗
      */
-    public void wash(){
+    public void wash() {
         mediator.wash();
     }
 }

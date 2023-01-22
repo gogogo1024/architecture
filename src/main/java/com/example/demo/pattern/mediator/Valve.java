@@ -1,9 +1,11 @@
 package com.example.demo.pattern.mediator;
 
-public class Valve implements Colleague{
+public class Valve implements Colleague {
     private MachineMediator mediator;
+
     /**
      * 设置适配器
+     *
      * @param mediator
      */
     @Override
@@ -15,7 +17,7 @@ public class Valve implements Colleague{
     /**
      * 打开阀门
      */
-    public void open(){
+    public void open() {
         System.out.println("Valve is opened...");
         System.out.println("Filling water...");
         mediator.closed();
@@ -24,7 +26,7 @@ public class Valve implements Colleague{
     /**
      * 关闭阀门
      */
-    public void  closed(){
+    public void closed() {
         System.out.println("Valve is closed...");
         mediator.on();
     }
