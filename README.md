@@ -16,4 +16,5 @@
     - interpreter 解释器模式
     - state 状态模式
     - decorator 装饰器模式
+    - iterator 迭代器
 2. src/test 测试文件

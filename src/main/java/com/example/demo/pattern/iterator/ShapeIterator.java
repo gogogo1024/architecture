@@ -1,7 +1,5 @@
 package com.example.demo.pattern.iterator;
 
-import org.jetbrains.annotations.NotNull;
-
 import java.util.Iterator;
 
 public class ShapeIterator implements Iterator<Shape> {
